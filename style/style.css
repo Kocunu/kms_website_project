@@ -1,6 +1,63 @@
-body {
-    background-color: blanchedalmond;
-    font-family:Georgia, 'Times New Roman', Times, serif;
 
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+      background-color: #333333;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      height: 80px;
+      position: fixed; 
+      width: 100%;
+      top: 0; 
+      z-index: 1000; 
+  }
+  
+  .navbar a {
+      color: rgba(234, 233, 233, 0.842);
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #navbar-logo {
+      height: 120px; 
+  }
+  
+  .navbar a:hover {
+      background-color: #dddddd0b;
+      border-radius: 12px;
+  }
+  
+  @media screen and (max-width: 600px) {
+      .navbar a {
+          float: none;
+          display: block;
+          text-align: left;
+          padding: 10px;
+          text-align: center;
+      }
+      #navbar-logo {
+          height: 60px; 
+      }
+  }
+.Norway {
+    margin-top: 60px;
 }
