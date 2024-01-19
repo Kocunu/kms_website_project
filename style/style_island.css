@@ -113,6 +113,7 @@
     padding: 0;
     margin-top: 10px; /* Abstand von der Bildergalerie */
     justify-content:space-around;
+    margin-bottom: 5px;
   }
 
   .feature {
@@ -139,3 +140,51 @@
   body {
     background-color: #fffdfd;
   }
+  footer {
+    background-color: #333333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.about-me,
+.social-media {
+    flex: 1;
+}
+
+h3 {
+    color: #848176;
+}
+
+.contact-info p,
+.about-me p {
+    color: #ccc;
+    line-height: 25px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
