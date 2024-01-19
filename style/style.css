@@ -12,10 +12,10 @@
     align-items: center;
     padding: 10px 0;
     height: 80px;
-    position: fixed; 
+    position: fixed;
     width: 100%;
-    top: 0; 
-    z-index: 1000; 
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -29,7 +29,7 @@
 }
 
 #navbar-logo {
-    height: 120px; 
+    height: 120px;
 }
 
 .navbar a:hover {
@@ -38,17 +38,53 @@
 }
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .navbar a {
         float: none;
         display: block;
-        text-align: left;
-        padding: 10px;
         text-align: center;
+        padding: 10px;
     }
     #navbar-logo {
-        height: 60px; 
+        height: 60px;
+    }
+
+    .Norway,
+    .Iceland,
+    .Denmark,
+    .Sweden,
+    .Finland {
+        margin-top: 70px;
+    }
+
+    .country-img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .country-info h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+
+    .country-info p {
+        text-align: center;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    #endNote {
+        font-size: 16px;
     }
 }
+
+
+/* Ihre vorhandenen Desktop-Stile bleiben unverändert */
 
 .Norway,
 .Iceland,
@@ -73,7 +109,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(167, 16, 16, 0.3);
     transition: transform 0.3s ease-in-out;
-    width: 65%; /* Adjust the width as needed */
+    width: 65%;
     max-width: none;
     height: auto;
 }
@@ -96,20 +132,23 @@
     margin-bottom: 10%;
     text-align: left;
     font-size: 42px;
-    color:rgb(186, 12, 47)
+    color: rgb(186, 12, 47);
 }
+
 .country-info p {
     text-align: left;
     color: #241616;
     line-height: 30px;
 }
+
 #endNote {
     text-align: center;
     font-size: 20px;
-    margin-bottom: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
 }
 
-/* Your existing styles */
 
 footer {
     background-color: #333333;
