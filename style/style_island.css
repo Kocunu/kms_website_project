@@ -1,0 +1,118 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  .navbar {
+      background-color: #333333;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      height: 80px;
+      position: fixed; 
+      width: 100%;
+      top: 0; 
+      z-index: 1000; 
+  }
+  
+  .navbar a {
+      color: rgba(234, 233, 233, 0.842);
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #navbar-logo {
+      height: 120px; 
+  }
+  
+  .navbar a:hover {
+      background-color: #dddddd0b;
+      border-radius: 12px;
+  }
+  
+  @media screen and (max-width: 800px) {
+      .navbar a {
+          float: none;
+          display: block;
+          text-align: left;
+          padding: 10px;
+          text-align: center;
+          font-size:15px;
+      }
+      #navbar-logo {
+          height: 40px; 
+      }
+  }
+
+.TitelApartment {
+    text-align: center;
+    margin-top: 60px;
+    background-color: #33333341;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #555252;
+    font-size: 27px;
+}
+
+.ApartmentDescription {
+    text-align: left;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#565c5e
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* 2 Teile für das große Bild, 1 Teil für die kleineren Bilder */
+    gap: 0px;
+  }
+
+  .gallery-image {
+    position: relative;
+  }
+
+  .gallery-image.large {
+    grid-column: span 2;
+    grid-row: span 2; /* Das große Bild erstreckt sich über zwei Reihen */
+  }
+
+  .gallery-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* Abstand von der Bildergalerie */
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Abstand zwischen Icon und Text */
+    border: 2px solid #635454;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .feature-icon {
+    width: 24px; /* oder die gewünschte Größe der Icons */
+    height: 24px;
+  }
