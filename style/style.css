@@ -1,63 +1,161 @@
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  * {
-    margin: 0;
+}
+
+.navbar {
+    background-color: #333333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    height: 80px;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    z-index: 1000; 
+}
+
+.navbar a {
+    color: rgba(234, 233, 233, 0.842);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#navbar-logo {
+    height: 120px; 
+}
+
+.navbar a:hover {
+    background-color: #dddddd0b;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 10px;
+        text-align: center;
+    }
+    #navbar-logo {
+        height: 60px; 
+    }
+}
+
+.Norway,
+.Iceland,
+.Denmark,
+.Sweden,
+.Finland {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.country-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.country-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(167, 16, 16, 0.3);
+    transition: transform 0.3s ease-in-out;
+    width: 65%; /* Adjust the width as needed */
+    max-width: none;
+    height: auto;
+}
+
+.country-img:hover {
+    transform: scale(1.05);
+}
+
+.country-img img {
+    width: 100%;
+    height: auto;
+}
+
+.country-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.country-info h2 {
+    margin-bottom: 10%;
+    text-align: left;
+    font-size: 42px;
+    color:rgb(186, 12, 47)
+}
+.country-info p {
+    text-align: left;
+    color: #241616;
+    line-height: 30px;
+}
+#endNote {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+/* Your existing styles */
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.about-me,
+.social-media {
+    flex: 1;
+}
+
+h3 {
+    color: #848176;
+}
+
+.contact-info p,
+.about-me p {
+    color: #ccc;
+    line-height: 25px;
+}
+
+.social-media ul {
+    list-style: none;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .navbar {
-      background-color: #333333;
-      overflow: hidden;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0;
-      height: 80px;
-      position: fixed; 
-      width: 100%;
-      top: 0; 
-      z-index: 1000; 
-  }
-  
-  .navbar a {
-      color: rgba(234, 233, 233, 0.842);
-      padding: 14px 20px;
-      text-decoration: none;
-      text-align: center;
-      display: block;
-      font-size: 30px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  
-  #navbar-logo {
-      height: 120px; 
-  }
-  
-  .navbar a:hover {
-      background-color: #dddddd0b;
-      border-radius: 12px;
-  }
-  
-  @media screen and (max-width: 600px) {
-      .navbar a {
-          float: none;
-          display: block;
-          text-align: left;
-          padding: 10px;
-          text-align: center;
-      }
-      #navbar-logo {
-          height: 60px; 
-      }
-  }
-.Norway {
-    margin-top: 60px;
+    margin: 0;
+}
+
+.social-media li {
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
 }
