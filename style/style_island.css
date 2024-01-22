@@ -1,0 +1,232 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  
+  .navbar {
+      background-color: #333333;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      height: 80px;
+      position: fixed; 
+      width: 100%;
+      top: 0; 
+      z-index: 1000; 
+  }
+  
+  .navbar a {
+      color: rgba(234, 233, 233, 0.842);
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  #navbar-logo {
+      height: 120px; 
+  }
+  
+  .navbar a:hover {
+      background-color: #dddddd0b;
+      border-radius: 12px;
+  }
+  
+  @media screen and (max-width: 700px) {
+      .navbar a {
+          float: none;
+          display: block;
+          text-align: left;
+          padding: 10px;
+          text-align: center;
+          font-size:15px;
+      }
+      #navbar-logo {
+          height: 40px; 
+      }
+     
+      
+      }
+     
+      @media screen and (max-width: 1200px) {
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 15px;
+      }
+    
+      .gallery-image2,
+      .textbild {
+        grid-column: 1 / -1; 
+      }
+    
+      
+      .gallery-image2 img {
+        width: 100%;
+        height: auto;
+      }
+    
+      
+      .textbild {
+        order: 1; 
+      }
+    
+      
+      .gallery-image {
+        order: 2; 
+      }
+    }
+
+.TitelApartment {
+    text-align: center;
+    margin-top: 60px;
+    background-color: #33333341;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #555252;
+    font-size: 27px;
+}
+
+.ApartmentDescription {
+    text-align: center;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#565c5e
+}
+
+.gallery {
+  margin-top: 5px;
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* 2 Teile für das große Bild, 1 Teil für die kleineren Bilder */
+    gap: 15px;
+  }
+
+  .gallery-image {
+    position: relative;
+  }
+  .gallery-image2 {
+    position: relative;
+  }
+
+.textbild {
+  border: #000000;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  border:2px #00000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(167, 16, 16, 0.3);
+  background-color: #33333341;
+  box-sizing: border-box;
+  line-height: 1.8;
+}
+
+  .gallery-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(167, 16, 16, 0.3);
+  }
+  .gallery-image2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(167, 16, 16, 0.3);
+  }
+
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* Abstand von der Bildergalerie */
+    justify-content:space-around;
+    margin-bottom: 5px;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Abstand zwischen Icon und Text */
+    border: 2px solid #635454;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .feature-icon {
+    width: 24px; /* oder die gewünschte Größe der Icons */
+    height: 24px;
+  }
+
+  .site-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+  }
+
+  body {
+    background-color: #fffdfd;
+  }
+  footer {
+    background-color: #333333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.about-me,
+.social-media {
+    flex: 1;
+}
+
+h3 {
+    color: #848176;
+}
+
+.contact-info p,
+.about-me p {
+    color: #ccc;
+    line-height: 25px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
