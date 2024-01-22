@@ -55,7 +55,35 @@
           height: 40px; 
       }
   }
-
+  @media screen and (max-width: 1200px) {
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr; 
+      grid-template-rows: auto; 
+      gap: 15px;
+    }
+  
+    .gallery-image2,
+    .textbild {
+      grid-column: 1 / -1; 
+    }
+  
+    
+    .gallery-image2 img {
+      width: 100%;
+      height: auto;
+    }
+  
+    
+    .textbild {
+      order: 1; 
+    }
+  
+    
+    .gallery-image {
+      order: 2; 
+    }
+  }
 .TitelApartment {
     text-align: center;
     margin-top: 60px;
@@ -82,10 +110,13 @@
   .gallery-image {
     position: relative;
   }
+  .gallery-image2 {
+    position: relative;
+  }
 
 .textbild {
   border: #000000;
-  font-size: 17px;
+  font-size: 18px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: left;
   border:2px #00000000;
@@ -97,6 +128,13 @@
 }
 
   .gallery-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(167, 16, 16, 0.3);
+  }
+  .gallery-image2 img {
     width: 100%;
     height: auto;
     display: block;
