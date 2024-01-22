@@ -48,64 +48,6 @@
     #navbar-logo {
         height: 60px; 
     }
-    .navbar {
-        height: auto;
-        padding: 10px;
-    }
-
-    .navbar a {
-        font-size: 15px;
-        padding: 10px 15px;
-    }
-
-    #navbar-logo {
-        height: 60px;
-    }
-
-    .country-container {
-        flex-direction: column;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    .country-img {
-        width: 100%;
-    }
-
-    .country-info {
-        padding: 15px;
-    }
-
-    .country-info h2 {
-        font-size: 30px;
-        margin-bottom: 8%;
-    }
-
-    #endNote {
-        font-size: 18px;
-        margin-bottom: 30px;
-    }
-
-    footer {
-        padding: 20px 0;
-    }
-
-    .footer-container {
-        flex-direction: column;
-    }
-
-    .social-media li {
-        margin-bottom: 10px;
-    }
-
-
-    .mobile-menu-icon {
-        display: block;
-    }
-
-    .mobile-menu.show {
-        display: block;
-    }
 }
 
 .Norway,
