@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #333333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 80px;
+  position: fixed; 
+  width: 100%;
+  top: 0; 
+  z-index: 1000; 
+}
+
+.navbar a {
+  color: rgba(234, 233, 233, 0.842);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#navbar-logo {
+  height: 120px; 
+}
+
+.navbar a:hover {
+  background-color: #dddddd0b;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 10px;
+      text-align: center;
+  }
+  #navbar-logo {
+      height: 60px; 
+  }
+}
+
+.customer-service-container {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: 140px;
+  background-color: rgb(232, 232, 232);
+  height: 100%;
+  padding-bottom: 150px;
+}
+
+.customer-services-headline {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.customer-service-grid {
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.email-container,
+.qa-container,
+.callus-container,
+.whatsapp-container {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #333333;
+  border: 1px solid rgb(210, 210, 210);
+  box-shadow: 6px 6px 10px rgb(220, 220, 220);
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.customer-mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 20px;
+}
+.customer-mini-grid p{
+  font-size: 22px;
+  text-align: left;
+  padding: 10px;
+}
+
+.customer-service-icons {
+  width: 55%;
+  min-width: 100px;
+  max-width: 150px;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.email-container:hover,
+.qa-container:hover,
+.whatsapp-container:hover,
+.callus-container:hover {
+  box-shadow: 6px 6px 10px rgb(160, 160, 160);
+  cursor: pointer;
+  background-color: rgb(232, 232, 232);
+  border: 1px solid rgb(210, 210, 210);
+  color: black;
+}
+
+.callus-container:hover .customer-service-icons {
+  content: url('../assets/contact/phone-icon-black.png');
+}
+.whatsapp-container:hover .customer-service-icons {
+  content: url('../assets/contact/whatsapp-icon-black.png');
+}
+.email-container:hover .customer-service-icons {
+  content: url('../assets/contact/email-icon-black.png');
+}
+.qa-container:hover .customer-service-icons {
+  content: url('../assets/contact/qa-icon-black.png');
+}
+
+@media screen and (max-width: 1200px) {
+  .customer-service-grid {
+      grid-template-columns: 1fr;
+  }
+  
+}
+
+.main-callus-grid,
+.main-qa-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 20px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.text-main-callus {
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.upper-text-main-callus,
+.upper-text-main-qa,
+.upper-text-main-whatsapp,
+.upper-text-main-email {
+  text-align: center;
+  padding: 20px;
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.lower-text-main-callus,
+.lower-text-main-whatsapp,
+.lower-text-main-email {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.image-main-callus,
+.main-qa-right{
+  padding: 40px;
+  margin-right: 20px;
+  display: grid;
+  place-items: center;
+  vertical-align: middle;
+  border-left: 2px solid gray;
+}
+
+.phone-image-main-callus,
+.qa-image-main-qa{
+  width: 60%;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.main-whatsapp-grid,
+.main-email-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #333333;
+  color: white;
+}
+
+.text-main-whatsapp,
+.text-main-email {
+  padding: 10px;
+  margin-left: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.image-main-whatsapp,
+.image-main-email {
+  padding: 40px;
+  margin-right: 20px;
+  display: grid;
+  place-items: center;
+  vertical-align: middle;
+  border-right: 2px solid gray;
+}
+
+.whatsapp-image-main-whatsapp,
+.email-image-main-email {
+  width: 60%;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+.lower-text-main-qa {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.qa-q {
+  border: 1px solid gray;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #333333;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+.qa-a {
+  border: 1px solid gray;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #d8b98c;
+  background-color: #333333;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  border-top-style: none;
+  word-wrap: break-word;
+}
+
+.first-last-name-email-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 10px 10px;
+  padding-left: 350px;
+  padding-right: 350px;
+  margin-top: 20px;
+}
+
+.email-send-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 350px;
+  padding-right: 350px;
+
+}
+
+.text-main-email input {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  color: #333333;
+  font-size: 18px;
+  border-style: none;
+  box-shadow: inset 0em 0.06em 10px gray;
+  border-radius: 5px;
+}
+.first-name::placeholder,
+.last-name::placeholder,
+.email::placeholder {
+  color: #333333;
+}
+
+.text-main-email button {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  background-color: #d8b98c;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.25s;
+}
+
+.text-main-email button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: #d8b98c;
+}
+
+.text-main-email button:active {
+  background-color: rgb(18, 18, 18);
+}
+
+.main-email-grid {
+  border-bottom: 2px solid gray;
+}
+
