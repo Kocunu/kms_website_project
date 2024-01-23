@@ -103,7 +103,7 @@
 
 .customer-service-icons {
   width: 55%;
-  min-width: 100px;
+  min-width: 50px;
   max-width: 150px;
   padding: 10px;
   margin-left: 30px;
@@ -165,8 +165,7 @@
 }
 
 .lower-text-main-callus,
-.lower-text-main-whatsapp,
-.lower-text-main-email {
+.lower-text-main-whatsapp {
   font-size: 30px;
   font-weight: bold;
   padding: 30px;
@@ -185,7 +184,7 @@
 .phone-image-main-callus,
 .qa-image-main-qa{
   width: 60%;
-  min-width: 150px;
+  min-width: 100px;
   max-width: 400px;
 }
 
@@ -221,13 +220,14 @@
 .whatsapp-image-main-whatsapp,
 .email-image-main-email {
   width: 60%;
-  min-width: 150px;
+  min-width: 100px;
   max-width: 400px;
 }
 
 .lower-text-main-qa {
   padding-left: 60px;
   padding-right: 60px;
+  font-size: 30px;
 }
 
 .qa-q {
@@ -238,7 +238,6 @@
   margin: 0 auto;
   color: #333333;
   font-weight: bold;
-  font-size: 25px;
   padding: 5px;
   border-radius: 5px;
   word-wrap: break-word;
@@ -251,7 +250,6 @@
   margin: 0 auto;
   color: #d8b98c;
   background-color: #333333;
-  font-size: 25px;
   padding: 5px;
   border-radius: 5px;
   border-top-style: none;
@@ -323,3 +321,46 @@
   border-bottom: 2px solid gray;
 }
 
+@media screen and (max-width: 1200px) {
+  .upper-text-main-callus,
+  .upper-text-main-whatsapp,
+  .upper-text-main-qa, 
+  .upper-text-main-email {
+    font-size: 50px;
+  }
+
+  .lower-text-main-callus,
+  .lower-text-main-whatsapp,
+  .lower-text-main-qa {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-email-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .first-last-name-email-grid,
+  .email-send-grid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .whatsapp-image-main-whatsapp,
+  .email-image-main-email {
+  width: 20%;
+}
+.image-main-email {
+  border-right: none;
+}
+
+@media screen and (max-width: 425px) {
+  .customer-services-headline {
+    font-size: 30px;
+    padding: 50px;
+    margin-left: 50px;
+  }
+
+}
+}
