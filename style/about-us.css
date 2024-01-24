@@ -160,7 +160,48 @@ body {
 
 .pixel-cells-image {
   width: 100%;
-  min-width: 150px;
+  min-width: 50px;
   max-width: 460px;
   border-radius: 10%;
 }
+
+@media screen and (max-width: 1200px) {
+  .about-us-container {
+    padding-top: 50px;
+  }
+
+  .team-container {
+    padding-top: 50px;
+  }
+
+  .left-side-container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .au-headline {
+    font-size: 30px;
+  }
+
+  .au-text {
+    font-size: 20px;
+  }
+    
+  .team-right-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .team-left-container {
+    padding-left: 15px;
+  padding-right: 15px;
+  }
+
+  .team-headline {
+    font-size: 30px;
+  }  
+
+  .team-text {
+    font-size: 20px;
+  }
+  }
