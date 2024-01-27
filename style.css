@@ -28,6 +28,7 @@ body, h1, h2, h3, p {
     padding: 0;
 }
 
+
 /* Apply a modern font and set a background color */
 body {
     font-family: Arial, sans-serif;
@@ -102,4 +103,5 @@ div {
     width: auto;
     display: block; /* to replace the h1 block element */
 }
+
 
