@@ -1,34 +1,9 @@
-body {
-    background-color: blanchedalmond;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-.Mainpage,
-.Norway,
-.Iceland,
-.Denmark,
-.Sweden,
-.Finland {
-    text-align: center; /* Horizontale Zentrierung für den gesamten Inhalt in den Div-Containern */
-}
-
-.Mainpage h1,
-.Norway h1,
-.Iceland h1,
-.Denmark h1,
-.Sweden h1,
-.Finland h1 {
-    margin: 0 auto; /* Horizontale Zentrierung für die Überschriften */
-}
-
-
-}
-
-/* Reset some default styles */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
 
-/* Apply a modern font and set a background color */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
@@ -36,43 +11,37 @@ body {
     padding: 20px;
 }
 
-/* Style the header */
 h1 {
     font-size: 36px;
     color: #333;
     text-align: center;
 }
 
-/* Style the section headers */
 h2 {
     font-size: 24px;
     color: #333;
     margin-top: 20px;
 }
 
-/* Style the paragraphs */
 p {
     font-size: 16px;
     line-height: 1.5;
     margin-top: 10px;
 }
 
-/* Style images */
 img {
     max-width: 100%;
-    width: "1000";
-    height: "500";
+    width: 1000px;
+    height: 500px;
     display: block;
     margin: 0 auto;
 }
 
-/* Style links */
 a {
     color: #007bff;
     text-decoration: none;
 }
 
-/* Style div containers */
 div {
     background-color: #fff;
     border-radius: 5px;
@@ -87,10 +56,10 @@ div {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffffff38; /* Hintergrundfarbe, falls gewünscht */
+    background-color: #ffffff38; 
     padding: 0px; /* Platz um den Text herum für bessere Lesbarkeit */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Rahmen */
-    z-index: 1000; /* Falls das Element über anderen Inhalten schweben soll */
+    z-index: 1000; 
 }
 
 #header_main h1 {
@@ -98,7 +67,9 @@ div {
 }
 
 #logo {
-    height: 150px; /* or any size you prefer */
+    height: 150px; 
     width: auto;
-    display: block; /* to replace the h1 block element */
+    display: block; 
 }
+
+
