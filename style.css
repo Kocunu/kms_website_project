@@ -61,8 +61,8 @@ p {
 /* Style images */
 img {
     max-width: 100%;
-    width: "1000";
-    height: "500";
+    width: 1000;
+    height: 500;
     display: block;
     margin: 0 auto;
 }
