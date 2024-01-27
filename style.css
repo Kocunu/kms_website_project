@@ -1,13 +1,6 @@
 body {
     background-color: blanchedalmond;
     font-family:Georgia, 'Times New Roman', Times, serif;
-.Norway,
-.Iceland,
-.Denmark,
-.Sweden,
-.Finland {
-    text-align: center; /* Horizontale Zentrierung für den gesamten Inhalt in den Div-Containern */
-}
 
 .Mainpage h1,
 .Norway h1,
