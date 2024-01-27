@@ -244,6 +244,7 @@
   border: 1px solid gray;
   display: grid;
   place-items: center;
+  text-align: center;
   width: 100%;
   margin: 0 auto;
   color: #333333;
@@ -256,6 +257,7 @@
   border: 1px solid gray;
   display: grid;
   place-items: center;
+  text-align: center;
   width: 100%;
   margin: 0 auto;
   color: #d8b98c;
