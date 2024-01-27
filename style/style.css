@@ -70,6 +70,7 @@
 
     .country-img {
         width: 100%;
+        margin-top: 20px;
     }
 
     .country-info {
@@ -215,5 +216,3 @@ h3 {
 .social-media a:hover {
     text-decoration: underline;
 }
-
-
