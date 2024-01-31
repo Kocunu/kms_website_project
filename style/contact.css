@@ -371,6 +371,89 @@
   }
   .whatsapp-image-main-whatsapp,
   .email-image-main-email {
-  width: 20%;
+    width: 20%;
+}
+}
+@media screen and (max-width: 425px) {
+  
+  .customer-service-container {
+    padding-bottom: 50px;
+  }
+
+  .customer-services-headline{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .callus-container nav,
+  .email-container nav,
+  .qa-container nav,
+  .whatsapp-container nav{
+    font-size: 20px;
+  }
+
+  .customer-mini-grid p{
+    font-size: 17.5px;
+  }
+  .upper-text-main-callus,
+  .upper-text-main-whatsapp,
+  .upper-text-main-qa, 
+  .upper-text-main-email {
+    font-size: 40px;
+  }
+
+  .lower-text-main-callus,
+  .lower-text-main-whatsapp,
+  .lower-text-main-qa {
+    font-size: 15px;
+  }
+
+  .image-main-whatsapp {
+    margin-right: 0px;
+  }
+  .text-main-whatsapp {
+    padding: 0px;
+  }
+
+  .upper-text-main-callus,
+  .upper-text-main-whatsapp,
+  .upper-text-main-qa, 
+  .upper-text-main-email {
+    font-size: 30px;
+  }
+
+  .lower-text-main-callus,
+  .lower-text-main-qa,
+  .lower-text-main-whatsapp{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+  }
+  .email-image-main-email {
+    width: 5%;
+    min-width: none;
+    max-width: 300px;
+  }
+  
+  .input-fina,
+  .input-lana {
+    width: 100px;
+  }
+
+  .input-email {
+    width: 204px;
+  }
+
+  .input-text {
+    width: 204px;
+    min-width: 204px;
+    max-width: 204px;
+  }
+
+  .input-fina::placeholder,
+  .input-lana::placeholder,
+  .input-email::placeholder,
+  .input-text {
+    font-size: 14px;
 }
 }
