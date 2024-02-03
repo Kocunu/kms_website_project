@@ -431,7 +431,7 @@
   }
   .email-image-main-email {
     width: 5%;
-    min-width: none;
+    min-width: 50px;
     max-width: 300px;
   }
   
